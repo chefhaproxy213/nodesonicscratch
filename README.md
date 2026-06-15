@@ -1,4 +1,4 @@
-# link-checker-11be22
+# link-checker-83efa2
 
 A Go link checker utility.
 
